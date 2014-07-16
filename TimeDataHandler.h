@@ -23,6 +23,7 @@ typedef enum{ SET , CANCEL }uploadOption;
  削除したいとき: timeに削除したい設定時刻,optionにCANCELを入れて実行。
  
  urlはサーバ側で処理するphpファイル(info_upload.php)のURLを入れる。
+ 現在はhttp://67751555f3ac5c31.lolipop.jp/info_upload.php
  返り値は登録成功したらYES,失敗したらNO。
  */
 
@@ -32,6 +33,7 @@ typedef enum{ SET , CANCEL }uploadOption;
  
  取得する時刻範囲はtime1からtime2まで。
  urlはサーバ側で処理するphpファイル(info_distribution.php)のURLを入れる。
+ 現在はhttp://67751555f3ac5c31.lolipop.jp/info_distribution.php
  返り値は 「キー:時刻　オブジェクト:その時刻の人数割合（パーセント）」の形のNSDictionary。
  ただし、取得に失敗したり、time1からtime2までに誰も登録していなかったりしたらnilが返ってくる。
  */
